@@ -1,0 +1,147 @@
+export interface Experience {
+    id: string;
+    company: string;
+    title: string;
+    location: string;
+    dateRange: string;
+    bullets: string[];
+}
+
+export interface Education {
+    school: string;
+    degree: string;
+    major: string;
+    dates: string;
+    coursework: string[];
+    honors: string[];
+}
+
+export interface Project {
+    id: string;
+    name: string;
+    shortDescription: string;
+    techStack: string[];
+    impact: string;
+    links: {
+        github?: string;
+        live?: string;
+    };
+}
+
+export interface About {
+    bio: string;
+    email?: string;
+    github?: string;
+    focusAreas: string[];
+    stats: { label: string; value: number }[];
+}
+
+export const profileData = {
+    experience: [
+        {
+            id: 'exp1',
+            company: 'Microsoft',
+            title: 'Software Engineer Intern',
+            location: 'Redmond, WA',
+            dateRange: 'May 2025 - August 2025',
+            bullets: [
+                'Built an interactive outage dashboard with trained LLM analyst using React, C#, Typescript, KQL, and Azure APIs—featuring real-time geographic visualization, automated incident analysis, and insights generation for enhanced operational monitoring',
+            ],
+        },
+        {
+            id: 'exp2',
+            company: 'Kashaya Language Lab, University of Pennsylvania',
+            title: 'Software Engineer',
+            location: 'Philadelphia, PA',
+            dateRange: 'October 2024 - June 2025',
+            bullets: [
+                'Contributed to front-end development and HTML/CSS language data integration for UPenn\'s Kashaya tribal dictionary site, enhancing accessibility and user experience to support Indigenous language preservation',
+            ],
+        },
+        {
+            id: 'exp3',
+            company: 'ROBLOX',
+            title: 'Game Developer & UI Designer',
+            location: 'Broomfield, CO',
+            dateRange: 'August 2014 - May 2022',
+            bullets: [
+                'Developed 20+ online games with cumulative 4M+ plays and generated approximately $15,000 in earnings using Lua, MySQL, and object-oriented programming to deliver engaging experiences',
+            ],
+        },
+    ] as Experience[],
+    education: {
+        school: 'STANFORD UNIVERSITY',
+        degree: 'Bachelor of Science',
+        major: 'Computer Science, Computer Engineering',
+        dates: 'Anticipated Graduation: 06/2027',
+        coursework: [
+            'Artificial Intelligence',
+            'Operating Systems',
+            'Digital System Design',
+            'Continuous Mathematics for ML',
+            'Design & Analysis of Algorithms',
+            'Probability',
+            'Discrete Mathematics',
+            'Linear Algebra & Multivariable Calculus',
+        ],
+        honors: [
+            '1st Place Technical Award 2025 Microsoft M365 Intern Copilot Agentic AI Hackathon',
+            '2nd Place Coinbase Agent Payments YC Hackathon',
+            '2nd Place AISES-Chevron 2024 National Hackathon',
+            '3rd Place AISES-Chevron 2023 National AI Hackathon',
+            'Jane Street UNBOXED Scholar',
+        ],
+    } as Education,
+    projects: [
+        {
+            id: 'proj1',
+            name: 'GrokLock - High Impact Recruiting',
+            shortDescription: '3D global talent intelligence platform with real-time, priority-based filters.',
+            techStack: ['React', 'react-globe.gl', 'Express.js', 'xAI API'],
+            impact: 'Built high-FPS globe navigation and holographic markers for an immersive experience that speeds up candidate discovery.',
+            links: {
+                github: 'https://github.com/aidanwhitedeer/groklock',
+            },
+        },
+        {
+            id: 'proj2',
+            name: 'Sonus - Voice Payment Interface',
+            shortDescription: '2nd Place Coinbase Agentic Payments YC Hackathon - AI-powered Web3 payment platform.',
+            techStack: ['TypeScript', 'Next.js', 'Coinbase CDP', 'Claude AI', 'Vapi'],
+            impact: 'Features autonomous transaction orchestration, HTTP 402 payment protocol, phone-based approval workflows, and gas-abstracted on-chain payments.',
+            links: {
+                github: 'https://github.com/tonywangs/locus-agentic-hackathon',
+            },
+        },
+        {
+            id: 'proj3',
+            name: 'Jiwere Elder Intelligence',
+            shortDescription: 'Endangered Language Learning - AI-driven Indigenous language platform.',
+            techStack: ['React', 'Node.js', 'GPT/Gemini', 'Webonary APIs', 'SQLite', 'BERT'],
+            impact: 'Features authenticated dictionary search across 7k+ entries, AI conversation practice, voice-based pronunciation scoring, and gamified progress tracking.',
+            links: {},
+        },
+        {
+            id: 'proj4',
+            name: 'Sync\'d - Intern Social Networking App',
+            shortDescription: 'Full-stack social platform for Microsoft interns.',
+            techStack: ['React', 'TypeScript', 'Node.js', 'PostgreSQL', 'WebSockets', 'Graph API', 'OAuth 2.0'],
+            impact: 'Features Teams-integrated event management, real-time chat, and mobile-first PWA design.',
+            links: {
+                github: 'https://github.com/RemleyGHooker/Sync-d/tree/main',
+            },
+        },
+    ] as Project[],
+    about: {
+        bio: "Welcome to my interactive portfolio, my name is Aidan Whitedeer. I'm a Stanford CS student with an interest in XR/VR, Robotics, Machine Perception, and NLP",
+        email: 'whitedeer@stanford.edu',
+        github: 'https://github.com/awd-i',
+        focusAreas: ['XR/VR', 'AI/ML', 'Machine Perception', 'Natural Language Processing', 'Robotics', 'Dynamic Systems'],
+        stats: [
+            { label: 'AI / ML', value: 95 },
+            { label: 'FULL-STACK', value: 90 },
+            { label: 'SYSTEMS', value: 85 },
+            { label: 'WEB3', value: 80 },
+        ],
+    } as About,
+};
