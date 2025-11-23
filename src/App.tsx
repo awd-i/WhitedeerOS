@@ -7,6 +7,16 @@ import { AboutSection } from './components/Sections/AboutSection';
 
 function App() {
   const [activeSection, setActiveSection] = useState('experience');
+  const [showMobileContent, setShowMobileContent] = useState(false);
+
+  const handleSectionChange = (section: string) => {
+    setActiveSection(section);
+    setShowMobileContent(true); // Show content on mobile when section is selected
+  };
+
+  const handleBackToMenu = () => {
+    setShowMobileContent(false); // Return to menu on mobile
+  };
 
   const renderSection = () => {
     switch (activeSection) {
@@ -24,7 +34,12 @@ function App() {
   };
 
   return (
-    <MainLayout activeSection={activeSection} onSectionChange={setActiveSection}>
+    <MainLayout
+      activeSection={activeSection}
+      onSectionChange={handleSectionChange}
+      showMobileContent={showMobileContent}
+      onBackToMenu={handleBackToMenu}
+    >
       {renderSection()}
     </MainLayout>
   );
