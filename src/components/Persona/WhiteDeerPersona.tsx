@@ -12,6 +12,14 @@ const DeerModel: React.FC<{ activeSection: string }> = ({ activeSection }) => {
     const obj = useLoader(OBJLoader, '/models/Deer.obj');
     const meshRef = useRef<THREE.Group>(null);
     const materialRef = useRef<THREE.ShaderMaterial[]>([]);
+    const [isMobile, setIsMobile] = React.useState(false);
+
+    React.useEffect(() => {
+        const checkMobile = () => setIsMobile(window.innerWidth < 768);
+        checkMobile();
+        window.addEventListener('resize', checkMobile);
+        return () => window.removeEventListener('resize', checkMobile);
+    }, []);
 
     useFrame((state) => {
         if (!meshRef.current) return;
@@ -36,35 +44,44 @@ const DeerModel: React.FC<{ activeSection: string }> = ({ activeSection }) => {
         let targetZ = 0;
         let targetY = baseY;
 
-        switch (activeSection) {
-            case 'experience':
-                targetRotationY = 0.3;
-                targetRotationX = -0.1;
-                targetX = -2.5;
-                targetZ = 0;
-                targetY = baseY;
-                break;
-            case 'education':
-                targetRotationY = -0.4;
-                targetRotationX = -0.8; // Looking downward
-                targetX = -2;
-                targetZ = 0.5;
-                targetY = baseY;
-                break;
-            case 'projects':
-                targetRotationY = 0.5;
-                targetRotationX = -0.8; // Looking downward
-                targetX = -2.8;
-                targetZ = -0.5;
-                targetY = baseY;
-                break;
-            case 'about':
-                targetRotationY = 0.1;
-                targetRotationX = 0;
-                targetX = -3.2; // Move deer to the left
-                targetZ = -2.5; // Move deer backwards (away from screen)
-                targetY = baseY - 0.75; // Move deer down by 10%
-                break;
+        // On mobile, keep deer in fixed position
+        if (isMobile) {
+            targetRotationY = 0.3;
+            targetRotationX = -0.1;
+            targetX = -2;
+            targetZ = 0;
+            targetY = baseY;
+        } else {
+            switch (activeSection) {
+                case 'experience':
+                    targetRotationY = 0.3;
+                    targetRotationX = -0.1;
+                    targetX = -2.5;
+                    targetZ = 0;
+                    targetY = baseY;
+                    break;
+                case 'education':
+                    targetRotationY = -0.4;
+                    targetRotationX = -0.8; // Looking downward
+                    targetX = -2;
+                    targetZ = 0.5;
+                    targetY = baseY;
+                    break;
+                case 'projects':
+                    targetRotationY = 0.5;
+                    targetRotationX = -0.8; // Looking downward
+                    targetX = -2.8;
+                    targetZ = -0.5;
+                    targetY = baseY;
+                    break;
+                case 'about':
+                    targetRotationY = 0.1;
+                    targetRotationX = 0;
+                    targetX = -3.2; // Move deer to the left
+                    targetZ = -2.5; // Move deer backwards (away from screen)
+                    targetY = baseY - 0.75; // Move deer down by 10%
+                    break;
+            }
         }
 
         // Apply floating animation to Y position
