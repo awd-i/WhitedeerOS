@@ -1,5 +1,5 @@
 # WhitedeerOS
-
+- Welcome to my digital portfolio, where you can browse my projects/experience and such :).
 ## Tech Stack
 - **Framework:** React + TypeScript + Vite
 - **Styling:** Tailwind CSS
