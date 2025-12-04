@@ -97,6 +97,26 @@ export const profileData = {
     } as Education,
     projects: [
         {
+            id: 'proj6',
+            name: 'GIODE SDR - AI-Powered Human Sales Dashboard',
+            shortDescription: 'AI-powered SDR system with automated lead scoring and pipeline management.',
+            techStack: ['Next.js', 'TypeScript', 'Prisma ORM', 'Grok API', 'Docker', 'shadcn/ui', 'Tailwind CSS'],
+            impact: 'Built automated lead scoring, email generation, and pipeline management with REST APIs, multi-model evaluation, error handling with retries, and production-ready architecture.',
+            links: {
+                github: 'https://github.com/awd-i/GIODESDR/tree/main',
+            },
+        },
+        {
+            id: 'proj7',
+            name: 'LlamaQuechua OS - Quantifying LLM Endangered Language Hallucination',
+            shortDescription: 'Translation hallucination detector for endangered Quechua language.',
+            techStack: ['JavaScript', 'OpenAI GPT-4o', 'Google Cloud Translation API'],
+            impact: 'Built smoothed multinomial models to compute entropy, cross-entropy, and KL divergence with CLT confidence intervals, featuring dual-mode interface for sentence analysis and automated experiments—detecting 2.054-bit KL divergence and 6.7% token accuracy revealing Spanish contamination.',
+            links: {
+                github: 'https://github.com/awd-i/llamaquechua',
+            },
+        },
+        {
             id: 'proj1',
             name: 'GrokLock - High Impact Recruiting',
             shortDescription: '3D global talent intelligence platform with real-time, priority-based filters.',
@@ -142,26 +162,6 @@ export const profileData = {
             impact: 'Engineered cloud storage with SQL, scripted Lua-based mechanics, and integrated Roblox APIs to enable in-game catalog, persistent user data, and UI/UX elements.',
             links: {
                 live: 'https://www.roblox.com/games/11947761094/1-Weight-Every-Second',
-            },
-        },
-        {
-            id: 'proj6',
-            name: 'GIODE SDR - AI-Powered Human Sales Dashboard',
-            shortDescription: 'AI-powered SDR system with automated lead scoring and pipeline management.',
-            techStack: ['Next.js', 'TypeScript', 'Prisma ORM', 'Grok API', 'Docker', 'shadcn/ui', 'Tailwind CSS'],
-            impact: 'Built automated lead scoring, email generation, and pipeline management with REST APIs, multi-model evaluation, error handling with retries, and production-ready architecture.',
-            links: {
-                github: 'https://github.com/awd-i/GIODESDR/tree/main',
-            },
-        },
-        {
-            id: 'proj7',
-            name: 'LlamaQuechua OS - Quantifying LLM Endangered Language Hallucination',
-            shortDescription: 'Translation hallucination detector for endangered Quechua language.',
-            techStack: ['JavaScript', 'OpenAI GPT-4o', 'Google Cloud Translation API'],
-            impact: 'Built smoothed multinomial models to compute entropy, cross-entropy, and KL divergence with CLT confidence intervals, featuring dual-mode interface for sentence analysis and automated experiments—detecting 2.054-bit KL divergence and 6.7% token accuracy revealing Spanish contamination.',
-            links: {
-                github: 'https://github.com/awd-i/llamaquechua',
             },
         },
     ] as Project[],
