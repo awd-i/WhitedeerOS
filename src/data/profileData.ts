@@ -97,6 +97,26 @@ export const profileData = {
     } as Education,
     projects: [
         {
+            id: 'proj2',
+            name: 'Sonus - Voice Payment Interface',
+            shortDescription: '2nd Place Coinbase Agentic Payments YC Hackathon - AI-powered Web3 payment platform.',
+            techStack: ['TypeScript', 'Next.js', 'Coinbase CDP', 'Claude AI', 'Vapi'],
+            impact: 'Features autonomous transaction orchestration, HTTP 402 payment protocol, phone-based approval workflows, and gas-abstracted on-chain payments.',
+            links: {
+                github: 'https://github.com/tonywangs/locus-agentic-hackathon',
+            },
+        },
+        {
+            id: 'proj8',
+            name: 'xBeat - AI-Powered Voice DJ Panel',
+            shortDescription: 'xAI Hackathon Grok Voice Track - AI-powered DJ system with real-time audio processing.',
+            techStack: ['Next.js 16', 'React 19', 'TypeScript', 'Grok/X API', 'Web Audio API', 'Three.js', 'React Three Fiber', 'shadcn/ui', 'Tailwind CSS v4'],
+            impact: 'Engineered dual-deck audio engine with BPM detection, automated transitions, 3-band EQ, and bass/voice/melody isolation. Built real-time 3D visualizer, voice control with speech recognition and TTS, AI copilot music automation, and REST APIs.',
+            links: {
+                github: 'https://github.com/awd-i/xBeat',
+            },
+        },
+        {
             id: 'proj6',
             name: 'GIODE SDR - AI-Powered Human Sales Dashboard',
             shortDescription: 'AI-powered SDR system with automated lead scoring and pipeline management.',
@@ -124,16 +144,6 @@ export const profileData = {
             impact: 'Built high-FPS globe navigation and holographic markers for an immersive experience that speeds up candidate discovery.',
             links: {
                 github: 'https://github.com/aidanwhitedeer/groklock',
-            },
-        },
-        {
-            id: 'proj2',
-            name: 'Sonus - Voice Payment Interface',
-            shortDescription: '2nd Place Coinbase Agentic Payments YC Hackathon - AI-powered Web3 payment platform.',
-            techStack: ['TypeScript', 'Next.js', 'Coinbase CDP', 'Claude AI', 'Vapi'],
-            impact: 'Features autonomous transaction orchestration, HTTP 402 payment protocol, phone-based approval workflows, and gas-abstracted on-chain payments.',
-            links: {
-                github: 'https://github.com/tonywangs/locus-agentic-hackathon',
             },
         },
         {
