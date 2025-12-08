@@ -42,6 +42,16 @@ export interface About {
 export const profileData = {
     experience: [
         {
+            id: 'exp0',
+            company: 'Uber',
+            title: 'Incoming Software Engineer Intern',
+            location: 'San Francisco, CA',
+            dateRange: 'Present',
+            bullets: [
+                'Excited to develop infrastructure for car automation and transportation technology, real-time data processing, and working on distributed systems and scalable microservices architectures to support autonomous vehicle platforms',
+            ],
+        },
+        {
             id: 'exp1',
             company: 'Microsoft',
             title: 'Software Engineer Intern',
