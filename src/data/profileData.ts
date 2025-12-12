@@ -107,7 +107,7 @@ export const profileData = {
     } as Education,
     projects: [
         {
-            id: 'proj2',
+            id: 'proj0',
             name: 'Sonus - Voice Payment Interface',
             shortDescription: '2nd Place Coinbase Agentic Payments YC Hackathon - AI-powered Web3 payment platform.',
             techStack: ['TypeScript', 'Next.js', 'Coinbase CDP', 'Claude AI', 'Vapi'],
@@ -117,7 +117,7 @@ export const profileData = {
             },
         },
         {
-            id: 'proj8',
+            id: 'proj1',
             name: 'xBeat - AI-Powered Voice DJ Panel',
             shortDescription: 'xAI Hackathon Grok Voice Track - AI-powered DJ system with real-time audio processing.',
             techStack: ['Next.js 16', 'React 19', 'TypeScript', 'Grok/X API', 'Web Audio API', 'Three.js', 'React Three Fiber', 'shadcn/ui', 'Tailwind CSS v4'],
@@ -127,7 +127,7 @@ export const profileData = {
             },
         },
         {
-            id: 'proj6',
+            id: 'proj2',
             name: 'GIODE SDR - AI-Powered Human Sales Dashboard',
             shortDescription: 'AI-powered SDR system with automated lead scoring and pipeline management.',
             techStack: ['Next.js', 'TypeScript', 'Prisma ORM', 'Grok API', 'Docker', 'shadcn/ui', 'Tailwind CSS'],
@@ -137,7 +137,7 @@ export const profileData = {
             },
         },
         {
-            id: 'proj7',
+            id: 'proj3',
             name: 'LlamaQuechua OS - Quantifying LLM Endangered Language Hallucination',
             shortDescription: 'Translation hallucination detector for endangered Quechua language.',
             techStack: ['JavaScript', 'OpenAI GPT-4o', 'Google Cloud Translation API'],
@@ -147,7 +147,7 @@ export const profileData = {
             },
         },
         {
-            id: 'proj1',
+            id: 'proj4',
             name: 'GrokLock - High Impact Recruiting',
             shortDescription: '3D global talent intelligence platform with real-time, priority-based filters.',
             techStack: ['React', 'react-globe.gl', 'Express.js', 'xAI API'],
@@ -157,7 +157,7 @@ export const profileData = {
             },
         },
         {
-            id: 'proj3',
+            id: 'proj5',
             name: 'Jiwere Elder Intelligence',
             shortDescription: 'Endangered Language Learning - AI-driven Indigenous language platform.',
             techStack: ['React', 'Node.js', 'GPT/Gemini', 'Webonary APIs', 'SQLite', 'BERT'],
@@ -165,7 +165,7 @@ export const profileData = {
             links: {},
         },
         {
-            id: 'proj4',
+            id: 'proj6',
             name: 'Sync\'d - Intern Social Networking App',
             shortDescription: 'Full-stack social platform for Microsoft interns.',
             techStack: ['React', 'TypeScript', 'Node.js', 'PostgreSQL', 'WebSockets', 'Graph API', 'OAuth 2.0'],
@@ -175,7 +175,7 @@ export const profileData = {
             },
         },
         {
-            id: 'proj5',
+            id: 'proj7',
             name: 'Roblox Simulator Game',
             shortDescription: 'User-saving cloud storage with SQL and Lua-based game mechanics.',
             techStack: ['Lua', 'SQL', 'Roblox Studio', 'Roblox APIs'],
