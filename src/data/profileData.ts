@@ -90,7 +90,7 @@ export const profileData = {
         coursework: [
             'Artificial Intelligence',
             'Operating Systems',
-            'Digital System Design',
+            'VR',
             'Continuous Mathematics for ML',
             'Design & Analysis of Algorithms',
             'Probability',
